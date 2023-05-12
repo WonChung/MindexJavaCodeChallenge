@@ -56,7 +56,7 @@ public class CompensationServiceImplTest {
     }
 
     @Test
-    public void testCreateReadUpdateWithNewEmployee() {
+    public void testCreateReadWithNewEmployee() {
         Employee testEmployee = new Employee();
         testEmployee.setFirstName("John");
         testEmployee.setLastName("Doe");
@@ -90,7 +90,7 @@ public class CompensationServiceImplTest {
     }
 
     @Test
-    public void testCreateReadUpdateWithExisting() {
+    public void testCreateReadWithExistingEmployee() {
 
         // Get Employee first
         Employee testEmployee = restTemplate.getForEntity(employeeIdUrl, Employee.class,

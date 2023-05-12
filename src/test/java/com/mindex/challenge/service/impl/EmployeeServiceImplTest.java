@@ -97,7 +97,7 @@ public class EmployeeServiceImplTest {
     }
 
     @Test
-    public void testReturnNumberOfReportsForNewEmployeeDirectReports() {
+    public void testReturnNumberOfReportsForNewEmployeeWithDirectReports() {
         // Get an existing employee first
         Employee john = restTemplate.getForEntity(employeeIdUrl, Employee.class,
                 JOHN_LENNON_EMPLOYEE_ID).getBody();
